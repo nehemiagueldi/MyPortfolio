@@ -1,9 +1,9 @@
 import React from "react";
 import "./portfolio.css";
-import IMG1 from "../../assets/portfolio1.jpg";
+import IMG1 from "../../assets/happywork.jpg";
 import IMG2 from "../../assets/portfolio2.jpg";
 import IMG3 from "../../assets/portfolio3.jpg";
-import IMG4 from "../../assets/portfolio4.jpg";
+import IMG4 from "../../assets/gercepnet.jpg";
 import IMG5 from "../../assets/portfolio5.png";
 import IMG6 from "../../assets/portfolio6.jpg";
 
@@ -17,13 +17,13 @@ const Portfolio = () => {
           <div className="portfolio__item-image">
             <img src={IMG1} alt="" />
           </div>
-          <h3> This is a portfolio item title </h3>
+          <h3> Happy Work </h3>
           <div className="portfolio__item-cta">
-            <a href="https://github.com/" className="btn" target="_blank">
+            <a href="https://github.com/nehemiagueldi/HappyWork" className="btn" target="_blank">
               Github
             </a>
             <a
-              href="https://gercepnetz.000webhostapp.com"
+              href="https://nehemiagueldi.github.io/HappyWork/index.html"
               className="btn btn-primary"
               target="_blank"
             >
@@ -35,36 +35,36 @@ const Portfolio = () => {
           <div className="portfolio__item-image">
             <img src={IMG2} alt="" />
           </div>
-          <h3> This is a portfolio item title </h3>
+          <h3> Gercep News V1 </h3>
           <div className="portfolio__item-cta">
-            <a href="https://github.com/" className="btn" target="_blank">
+            <a href="https://github.com/nehemiagueldi/GercepNewsV1" className="btn" target="_blank">
               Github
             </a>
-            <a
+            {/* <a
               href="https://gercepnetz.000webhostapp.com"
               className="btn btn-primary"
               target="_blank"
             >
               Live Demo
-            </a>
+            </a> */}
           </div>
         </article>
         <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={IMG3} alt="" />
           </div>
-          <h3> This is a portfolio item title </h3>
+          <h3> Gercep News V2 </h3>
           <div className="portfolio__item-cta">
-            <a href="https://github.com/" className="btn" target="_blank">
+            <a href="https://github.com/nehemiagueldi/GercepNewsV2" className="btn" target="_blank">
               Github
             </a>
-            <a
+            {/* <a
               href="https://gercepnetz.000webhostapp.com"
               className="btn btn-primary"
               target="_blank"
             >
               Live Demo
-            </a>
+            </a> */}
           </div>
         </article>
         <article className="portfolio__item">
@@ -73,7 +73,7 @@ const Portfolio = () => {
           </div>
           <h3> This is a portfolio item title </h3>
           <div className="portfolio__item-cta">
-            <a href="https://github.com/" className="btn" target="_blank">
+            <a href="https://github.com/nehemiagueldi/GercepNet" className="btn" target="_blank">
               Github
             </a>
             <a
@@ -85,7 +85,7 @@ const Portfolio = () => {
             </a>
           </div>
         </article>
-        <article className="portfolio__item">
+        {/* <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={IMG5} alt="" />
           </div>
@@ -120,7 +120,7 @@ const Portfolio = () => {
               Live Demo
             </a>
           </div>
-        </article>
+        </article> */}
       </div>
     </section>
   );
