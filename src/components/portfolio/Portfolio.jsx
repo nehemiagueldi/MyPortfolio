@@ -71,7 +71,7 @@ const Portfolio = () => {
           <div className="portfolio__item-image">
             <img src={IMG4} alt="" />
           </div>
-          <h3> This is a portfolio item title </h3>
+          <h3> Gercep Net </h3>
           <div className="portfolio__item-cta">
             <a href="https://github.com/nehemiagueldi/GercepNet" className="btn" target="_blank">
               Github
