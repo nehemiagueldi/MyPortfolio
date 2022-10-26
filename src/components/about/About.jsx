@@ -42,7 +42,7 @@ const About = () => {
           {/* <h3>Who Am I?</h3> */}
 
           <p>
-          Hi, I'm Nehemia Gueldi, most people call me Nehemia. Currently studying Informatics at Universitas Multimedia Nusantara. I'm interested on Web Development, mainly on the Front-End side. Thanks for visiting my personal website, this website was made using React Framework. Therefore, I am very happy to implement my knowledge in Web creation and I can socialize and easily adapt to new environments. 
+          Hi, I'm Nehemia Gueldi, most people call me Nehemia. Currently studying Informatics at Universitas Multimedia Nusantara. I'm interested on Web Development. Thanks for visiting my personal website, this website was made using React Framework. Therefore, I am very happy to implement my knowledge in Web creation and I can socialize and easily adapt to new environments. 
           </p>
 
           <a href="#contact" className="btn btn-primary">
