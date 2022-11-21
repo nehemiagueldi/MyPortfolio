@@ -4,7 +4,7 @@ import IMG1 from "../../assets/happywork.jpg";
 import IMG2 from "../../assets/portfolio2.jpg";
 import IMG3 from "../../assets/portfolio3.jpg";
 import IMG4 from "../../assets/gercepnet.jpg";
-import IMG5 from "../../assets/portfolio5.png";
+import IMG5 from "../../assets/ecommerce.jpg";
 import IMG6 from "../../assets/portfolio6.jpg";
 
 const Portfolio = () => {
@@ -85,17 +85,17 @@ const Portfolio = () => {
             </a>
           </div>
         </article>
-        {/* <article className="portfolio__item">
+        <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={IMG5} alt="" />
           </div>
-          <h3> This is a portfolio item title </h3>
+          <h3> Ecommerce Example Page </h3>
           <div className="portfolio__item-cta">
-            <a href="https://github.com/" className="btn" target="_blank">
+            <a href="https://github.com/nehemiagueldi/ecommerce-example" className="btn" target="_blank">
               Github
             </a>
             <a
-              href="https://gercepnetz.000webhostapp.com"
+              href="https://ecommerce-example.pages.dev/"
               className="btn btn-primary"
               target="_blank"
             >
@@ -103,7 +103,7 @@ const Portfolio = () => {
             </a>
           </div>
         </article>
-        <article className="portfolio__item">
+        {/* <article className="portfolio__item">
           <div className="portfolio__item-image">
             <img src={IMG6} alt="" />
           </div>
