@@ -18,8 +18,18 @@
 }
 
 .portfolio__item-image {
-  border-radius: 1.5rem;
   overflow: hidden;
+  transition: .3s;
+}
+
+.portfolio__item-image:hover{
+  transform: scale(1.05);
+}
+
+.portfolio__item-image>img{
+  border-radius: 1.5rem;
+  width: 320px;
+  height: 180px;
 }
 
 .portfolio__item h3 {

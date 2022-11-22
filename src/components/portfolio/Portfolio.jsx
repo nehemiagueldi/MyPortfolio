@@ -5,7 +5,7 @@ import IMG2 from "../../assets/portfolio2.jpg";
 import IMG3 from "../../assets/portfolio3.jpg";
 import IMG4 from "../../assets/gercepnet.jpg";
 import IMG5 from "../../assets/ecommerce.jpg";
-import IMG6 from "../../assets/portfolio6.jpg";
+import IMG6 from "../../assets/cryptex.png";
 
 const Portfolio = () => {
   return (
@@ -96,6 +96,24 @@ const Portfolio = () => {
             </a>
             <a
               href="https://ecommerce-example.pages.dev/"
+              className="btn btn-primary"
+              target="_blank"
+            >
+              Live Demo
+            </a>
+          </div>
+        </article>
+        <article className="portfolio__item">
+          <div className="portfolio__item-image">
+            <img src={IMG6} alt="" />
+          </div>
+          <h3> Cryptex </h3>
+          <div className="portfolio__item-cta">
+            <a href="https://github.com/nehemiagueldi/Cryptex" className="btn" target="_blank">
+              Github
+            </a>
+            <a
+              href="https://nehemiagueldi.github.io/Cryptex/#"
               className="btn btn-primary"
               target="_blank"
             >
