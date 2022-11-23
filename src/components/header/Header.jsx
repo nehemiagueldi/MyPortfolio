@@ -2,6 +2,7 @@ import React from "react";
 import "./header.css";
 import CTA from "./CTA";
 import ME from "../../assets/Foto-removebg (2).png";
+// import ME from "../../assets/OpenPeepsBust1.png";
 import HeaderSocials from "./HeaderSocials";
 
 const Header = () => {
