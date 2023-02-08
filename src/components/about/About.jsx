@@ -4,21 +4,23 @@ import ME from "../../assets/Photo2.png";
 import { FaAward } from "react-icons/fa";
 import { FiUsers } from "react-icons/fi";
 import { VscFolderLibrary } from "react-icons/vsc";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const About = () => {
   return (
     <section id="about">
-      <h5>Get To Know</h5>
-      <h2>About Me</h2>
+      <h5 data-aos="fade-up" data-aos-offset="250">Get To Know</h5>
+      <h2 data-aos="fade-up" data-aos-offset="250">About Me</h2>
 
       <div className="container about__container">
-        <div className="about__me">
+        <div className="about__me" data-aos="zoom-in" data-aos-offset="380">
           <div className="about__me-image">
             <img src={ME} alt="About Image" />
           </div>
         </div>
 
-        <div className="about__content">
+        <div className="about__content" data-aos="fade-left" data-aos-offset="480">
           {/* <div className="about__cards">
             <article className="about__card">
               <FaAward className="about__icon" />
@@ -53,5 +55,21 @@ const About = () => {
     </section>
   );
 };
+
+AOS.init();
+
+// You can also pass an optional settings object
+// below listed default settings
+AOS.init({
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 1200, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: true, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
 
 export default About;

@@ -4,8 +4,11 @@ import { MdOutlineEmail } from "react-icons/md";
 import { RiMessengerLine } from "react-icons/ri";
 import { BsWhatsapp } from "react-icons/bs";
 import { BsLinkedin } from 'react-icons/bs';
+import { AiOutlineSend } from 'react-icons/ai';
 import { useRef } from "react";
 import emailjs from "emailjs-com";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const Contact = () => {
   const form = useRef();
@@ -33,17 +36,18 @@ const Contact = () => {
 
   return (
     <section id="contact">
-      <h5>Get In Touch</h5>
-      <h2>Contact Me</h2>
+      <h5 data-aos="fade-down" data-aos-offset="270">Get In Touch</h5>
+      <h2 data-aos="fade-down" data-aos-offset="270">Contact Me</h2>
 
       <div className="container contact__container">
-        <div className="contact__options">
+        <div className="contact__options" data-aos="fade-right" data-aos-offset="470">
           <article className="contact__option">
             <MdOutlineEmail className="contact__option-icon" />
             <h4>Email</h4>
             <h5>gueldinehemia@gmail.com</h5>
             <a href="mailto:gueldinehemia@gmail.com" target="_blank">
-              Send a message
+              Send a message 
+              {/* <AiOutlineSend/> */}
             </a>
           </article>
           <article className="contact__option">
@@ -67,7 +71,7 @@ const Contact = () => {
           </article>
         </div>
         {/* END OF CONTACT OPTIONS */}
-        <form ref={form} onSubmit={sendEmail}>
+        <form ref={form} onSubmit={sendEmail} data-aos="fade-left" data-aos-offset="470">
           <input
             type="text"
             name="name"
@@ -89,5 +93,21 @@ const Contact = () => {
     </section>
   );
 };
+
+AOS.init();
+
+// You can also pass an optional settings object
+// below listed default settings
+AOS.init({
+  // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+  offset: 120, // offset (in px) from the original trigger point
+  delay: 0, // values from 0 to 3000, with step 50ms
+  duration: 1200, // values from 0 to 3000, with step 50ms
+  easing: 'ease', // default easing for AOS animations
+  once: true, // whether animation should happen only once - while scrolling down
+  mirror: false, // whether elements should animate out while scrolling past them
+  anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+});
 
 export default Contact;

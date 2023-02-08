@@ -62,9 +62,13 @@ header {
   position: absolute;
   right: -2.3rem;
   bottom: 5rem;
-  transform: rotate(90deg);
+  /* transform: rotate(180deg); */
   font-weight: 300;
-  font-size: 0.9rem;
+  font-size: 1.5rem;
+}
+
+.scroll__down:hover {
+  cursor: pointer;
 }
 
 /*============ MEDIA QUERIES (MEDIUM DEVICES) =============*/
